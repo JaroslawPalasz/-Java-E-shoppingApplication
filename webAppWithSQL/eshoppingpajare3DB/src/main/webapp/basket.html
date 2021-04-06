@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="js/basket.js"></script>
+        <link rel="stylesheet" href="css/main.css" >
+    </head>
+    <body onload="displayProductListTable('BasketTable')" >
+        <form id="basketForm" action="BasketServlet" method="post">
+            <input id="actionDelimiter" type="hidden" name="action" /> 
+            <input type="button" id="Back" name="action" value="Back" onclick="submitForm
+                ('basketForm', 'Back')"/> 
+            <input type="button" id="Logout" name="action" value="Logout" onclick="submitForm
+                ('basketForm', 'Logout')"/>
+            <input type="button" id="RemoveFromBasket" name="action" value="RemoveFromBasket" onclick="submitForm
+                ('basketForm', 'RemoveFromBasket')"/> 
+            <input type="button" id="Pay" name="action" value="Pay" onclick="submitForm
+                ('basketForm', 'Pay')"/>
+            <label id="totalCost">Total Cost:</label>
+            <label id="pln">PLN: </label>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody id="BasketTable">
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="js/login.js"></script>
+        <link rel="stylesheet" href="main.css" >
+    </head>
+    <body>
+        <form id="loginform" action="/LoginServlet" method="GET">
+            <input type="text" id="username" name="username" value=""/><br>
+            <input type="password" id="password" name="password" value=""/>
+            <input type="button" id="log" value="Login" onclick="login('username', 'password');"/>
+        </form>
+        
+    </body>
+</html>

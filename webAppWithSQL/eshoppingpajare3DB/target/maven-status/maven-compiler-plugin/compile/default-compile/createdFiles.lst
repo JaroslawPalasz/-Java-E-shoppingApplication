@@ -1,0 +1,12 @@
+pl\polsl\lab\myexception\MyException.class
+pl\polsl\lab\db\DatabaseProvider.class
+pl\polsl\lab\eshoppingpajare3\JAXRSConfiguration.class
+pl\polsl\lab\services\CategoryServlet.class
+pl\polsl\lab\model\Eshopping.class
+pl\polsl\lab\model\Basket.class
+pl\polsl\lab\eshoppingpajare3\resources\JavaEE8Resource.class
+pl\polsl\lab\services\LoginServlet.class
+pl\polsl\lab\model\Product.class
+pl\polsl\lab\services\BasketServlet.class
+pl\polsl\lab\model\Client.class
+pl\polsl\lab\services\ProductListServlet.class

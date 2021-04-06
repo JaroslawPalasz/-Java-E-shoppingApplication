@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="js/productList.js"></script>
+        <link rel="stylesheet" href="css/main.css" >
+    </head>
+    <body onload="displayProductListTable('productListTable')" >
+        <form id="productListForm" action="ProductListServlet" method="post">
+            <input id="actionDelimiter" type="hidden" name="action" /> 
+            <input type="button" id="Back" name="action" value="Back" onclick="submitForm
+                ('productListForm', 'Back')"/> 
+            <input type="button" id="Logout" name="action" value="Logout" onclick="submitForm
+                ('productListForm', 'Logout')"/>
+            <input type="button" id="AddToBasket" name="action" value="AddToBasket" onclick="submitForm
+                ('productListForm', 'AddToBasket')"/> 
+            <input type="button" id="Basket" name="action" value="Basket" onclick="submitForm
+                ('productListForm', 'Basket')"/>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody id="productListTable">
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"pl.polsl.lab.eshopping"},{"l":"pl.polsl.lab.eshopping.controller"},{"l":"pl.polsl.lab.eshopping.model"},{"l":"pl.polsl.lab.eshopping.view"}]

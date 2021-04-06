@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.polsl.lab.controller.ProductListController">
+   <children>
+      <Button fx:id="backButton" layoutX="23.0" layoutY="23.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Button fx:id="logoutButton" layoutX="23.0" layoutY="353.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+      <Button fx:id="basketButton" layoutX="519.0" layoutY="353.0" mnemonicParsing="false" onAction="#basket" text="Basket" />
+      <Label fx:id="categoryLabel" layoutX="275.0" layoutY="19.0" text="Category:" />
+      <Label fx:id="loggedLabel" layoutX="531.0" layoutY="19.0" text="Logged in as:" />
+      <Button fx:id="addToBasketButton" layoutX="255.0" layoutY="353.0" mnemonicParsing="false" onAction="#addToBasket" text="Add to basket" />
+      <TableView fx:id="productCategoryTableView" layoutX="65.0" layoutY="67.0" prefHeight="239.0" prefWidth="471.0">
+        <columns>
+          <TableColumn fx:id="tableColumnName" prefWidth="99.0" text="Name" />
+          <TableColumn fx:id="tableColumnPrice" prefWidth="51.0" text="Price" />
+            <TableColumn fx:id="tableColumnAmount" prefWidth="59.0" text="Amount" />
+            <TableColumn fx:id="tableColumnDescription" prefWidth="261.0" text="Description" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
